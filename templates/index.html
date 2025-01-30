@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Index - QuickStart Bootstrap Template</title>
+    <meta name="description" content />
+    <meta name="keywords" content />
+
+    <!-- Favicons -->
+    <link href="/static/img/favicon.png" rel="icon" />
+    <link href="/static/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="/static/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/static/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="/static/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="/static/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="/static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="/static/css/main.css" rel="stylesheet" />
+    <link href="/static/css/styles.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: QuickStart
+  * Template URL: https://bootstrapmade.com/quickstart-bootstrap-startup-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center"
+      >
+        <a href="#" class="logo d-flex align-items-center me-auto">
+          <!--      <img src="/static/img/logo.png" alt=""> -->
+          <h1 class="sitename">IA Agent</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Inicio</a></li>
+            <li><a href="#email-marketing">IA Agent</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#faq">Preguntas frecuentes</a></li>
+            <li><a href="#testimonials">Testimonios</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <a class="btn-getstarted" href="#scraper-section">Get Started</a>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section">
+        <div class="hero-bg">
+          <img src="/static/img/hero-bg-light.webp" alt />
+        </div>
+        <div class="container text-center">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <h1 data-aos="fade-up">
+              Bienvenido a la nueva era <span>Agentes de IA</span>
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="100">
+              Agente de inteligencia artificial para su negocio<br />
+            </p>
+            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+              <a href="#scraper-section" class="btn-get-started">Get Started</a>
+              <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+            </div>
+            <img
+              src="/static/img/hero-services-img.webp"
+              class="img-fluid hero-img"
+              alt
+              data-aos="zoom-out"
+              data-aos-delay="300"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <section id="scraper-section" class="scraper-section section light-background">
+        <div class="container">
+          <div class="scraper-card text-white shadow-lg rounded">
+            <div class="card-body">
+              <h2 class="card-title text-center">Scraper de Producto</h2>
+              
+              <form id="scrapeForm">
+                <div class="form-group">
+                  <label for="url">URL del Producto (opcional)</label>
+                  <input type="url" class="form-control" id="url" name="url" placeholder="Ingresa la URL del producto">
+                </div>
+                <button type="button" class="btn btn-light btn-block" id="scrapeButton">Scrapear</button>
+                
+                <hr class="bg-white">
+
+                <p>O puedes llenar el formulario</p>
+      
+                <div class="form-group">
+                  <label for="name">Nombre del Producto</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Nombre del producto" required>
+                </div>
+                <div class="form-group">
+                  <label for="description">Descripción</label>
+                  <textarea class="form-control" id="description" name="description" rows="3" placeholder="Descripción del producto" required></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="price">Precio</label>
+                  <input type="text" class="form-control" id="price" name="price" placeholder="Precio del producto" required>
+                </div>
+                <button type="submit" class="btn btn-light btn-block">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <section id="email-marketing" class="email-marketing section">
+        <div class="container">
+          <div class="row gy-4">
+            <div
+              class="col-lg-6 content"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h1 class="section-title">
+                Automatiza tu estrategia de email marketing con IA
+              </h1>
+              <h3 class="section-description">
+                Nuestro Agente de IA para Marketing en n8n optimiza el envío de
+                correos electrónicos a tus clientes de manera inteligente y
+                automatizada. Extrae datos directamente desde tu base de datos y
+                personaliza cada mensaje para maximizar el impacto de tus
+                campañas.
+              </h3>
+              <ul class="features-list">
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <span>Automatización 100% optimizada</span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <span>Envíos precisos y personalizados</span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <span>Ahorra tiempo y mejora tus conversiones</span>
+                </li>
+              </ul>
+              <p class="cta-text">
+                Conéctate con tus clientes en el momento adecuado, sin esfuerzo.
+                ¡Potencia tu marketing con inteligencia artificial!
+              </p>
+            </div>
+
+            <div
+              class="col-lg-6 about-images"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <img src="/static/img/ia.jpeg" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Services Section -->
+      <section
+        id="featured-services"
+        class="featured-services section light-background"
+      >
+        <div class="container">
+          <div class="row gy-4">
+            <div
+              class="col-xl-4 col-lg-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-item d-flex">
+                <div class="icon flex-shrink-0">
+                  <i class="bi bi-envelope-paper"></i>
+                </div>
+                <div>
+                  <h4 class="title">
+                    <a href="#" class="stretched-link"
+                      >Automatización de Correos</a
+                    >
+                  </h4>
+                  <p class="description">
+                    Nuestro agente de IA toma datos de tu base de clientes y
+                    envía correos personalizados automáticamente, optimizando tu
+                    tiempo y alcance.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-xl-4 col-lg-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item d-flex">
+                <div class="icon flex-shrink-0">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <div>
+                  <h4 class="title">
+                    <a href="#" class="stretched-link">Mejora de Conversión</a>
+                  </h4>
+                  <p class="description">
+                    Con flujos de trabajo optimizados en n8n, mejora la tasa de
+                    conversión de tus campañas sin esfuerzo manual.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-xl-4 col-lg-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item d-flex">
+                <div class="icon flex-shrink-0">
+                  <i class="bi bi-lightning-charge"></i>
+                </div>
+                <div>
+                  <h4 class="title">
+                    <a href="#" class="stretched-link">Integración Rápida</a>
+                  </h4>
+                  <p class="description">
+                    Conéctalo fácilmente con tu CRM o base de datos y empieza a
+                    automatizar campañas en minutos sin necesidad de código.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Featured Services Section -->
+
+      <!-- Services Section -->
+      <section id="services" class="services section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Servicios</h2>
+          <p>
+            Automatiza tus procesos de marketing y comunicación con IA y
+            herramientas avanzadas
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item item-cyan position-relative">
+                <i class="bi bi-activity icon"></i>
+                <div>
+                  <h3>Automatización de Email Marketing con IA</h3>
+                  <p>
+                    Optimiza tus campañas de email marketing usando inteligencia
+                    artificial para enviar correos personalizados a tus clientes
+                    en el momento adecuado, mejorando la efectividad de tus
+                    campañas.
+                  </p>
+                  <a href="#" class="read-more stretched-link"
+                    >Más información <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item item-orange position-relative">
+                <i class="bi bi-broadcast icon"></i>
+                <div>
+                  <h3>Chatbot para WhatsApp</h3>
+                  <p>
+                    Implementa un chatbot inteligente en WhatsApp para
+                    interactuar con tus clientes de manera automatizada,
+                    responder preguntas frecuentes, y mejorar la experiencia de
+                    usuario en tiempo real.
+                  </p>
+                  <a href="#" class="read-more stretched-link"
+                    >Más información <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item item-teal position-relative">
+                <i class="bi bi-easel icon"></i>
+                <div>
+                  <h3>Automatización de Procesos de Marketing</h3>
+                  <p>
+                    Conecta todas tus herramientas de marketing y automatiza
+                    flujos de trabajo complejos para ahorrar tiempo y mejorar la
+                    eficiencia de tus campañas, desde la creación de contenido
+                    hasta el análisis de resultados.
+                  </p>
+                  <a href="#" class="read-more stretched-link"
+                    >Más información <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item item-red position-relative">
+                <i class="bi bi-bounding-box-circles icon"></i>
+                <div>
+                  <h3>Integración con Sistemas de CRM</h3>
+                  <p>
+                    Integra tu sistema CRM con herramientas de automatización
+                    para crear campañas personalizadas y gestionadas de manera
+                    centralizada, garantizando una comunicación más efectiva con
+                    tus clientes.
+                  </p>
+                  <a href="#" class="read-more stretched-link"
+                    >Más información <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-item item-indigo position-relative">
+                <i class="bi bi-calendar4-week icon"></i>
+                <div>
+                  <h3>Optimización de Campañas en Tiempo Real</h3>
+                  <p>
+                    Usa herramientas de análisis de datos impulsadas por IA para
+                    ajustar y optimizar tus campañas de marketing en tiempo
+                    real, mejorando las tasas de conversión y asegurando el
+                    mayor retorno sobre la inversión.
+                  </p>
+                  <a href="#" class="read-more stretched-link"
+                    >Más información <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+              <div class="service-item item-pink position-relative">
+                <i class="bi bi-chat-square-text icon"></i>
+                <div>
+                  <h3>Atención al Cliente Automatizada</h3>
+                  <p>
+                    Automatiza la atención al cliente con sistemas de IA que
+                    responden a las consultas de tus usuarios las 24 horas del
+                    día, mejorando la eficiencia y reduciendo tiempos de espera.
+                  </p>
+                  <a href="#" class="read-more stretched-link"
+                    >Más información <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Services Section -->
+
+      <section id="faq" class="faq section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Preguntas Frecuentes</h2>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+              <div class="faq-container">
+                <div class="faq-item faq-active">
+                  <h3>
+                    ¿Cómo funciona el agente de IA para la automatización de
+                    email marketing?
+                  </h3>
+                  <div class="faq-content">
+                    <p>
+                      El agente de IA en n8n optimiza el envío de correos
+                      electrónicos extrayendo datos directamente desde tu base
+                      de datos y personalizando cada mensaje en función de los
+                      intereses de tus clientes, asegurando una mayor
+                      efectividad en cada campaña.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>
+                    ¿Qué beneficios obtengo al utilizar la automatización con
+                    IA?
+                  </h3>
+                  <div class="faq-content">
+                    <p>
+                      La automatización optimizada reduce el tiempo de gestión
+                      de las campañas, mejora la personalización de los correos,
+                      y garantiza que los mensajes lleguen a los clientes en el
+                      momento más adecuado, lo que puede aumentar
+                      significativamente las conversiones.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>
+                    ¿Es difícil integrar el agente de IA con mi sistema actual?
+                  </h3>
+                  <div class="faq-content">
+                    <p>
+                      No, la integración con tu sistema actual es sencilla. El
+                      agente de IA se conecta a tu base de datos y otros
+                      sistemas a través de n8n, una herramienta de
+                      automatización visual que facilita la creación de flujos
+                      de trabajo sin necesidad de escribir código complejo.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>
+                    ¿Puedo personalizar las campañas según diferentes segmentos
+                    de clientes?
+                  </h3>
+                  <div class="faq-content">
+                    <p>
+                      Sí, puedes segmentar tus clientes en diferentes grupos
+                      según sus comportamientos o intereses y enviarles correos
+                      electrónicos altamente personalizados que se adapten a sus
+                      necesidades específicas, mejorando la efectividad de cada
+                      campaña.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>
+                    ¿Qué tipo de resultados puedo esperar al utilizar el agente
+                    de IA para email marketing?
+                  </h3>
+                  <div class="faq-content">
+                    <p>
+                      Podrás obtener una mayor tasa de apertura de correos, una
+                      mejor tasa de clics, y un aumento en las conversiones
+                      debido a la personalización inteligente que realiza la IA.
+                      Los correos serán más relevantes y estarán mejor alineados
+                      con los intereses de tus clientes.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>
+                    ¿El sistema es seguro y protege los datos de mis clientes?
+                  </h3>
+                  <div class="faq-content">
+                    <p>
+                      Sí, el sistema está diseñado con altos estándares de
+                      seguridad para proteger los datos de tus clientes. Cumple
+                      con las normativas de privacidad y garantiza que toda la
+                      información esté segura en todo momento.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+              </div>
+            </div>
+            <!-- End Faq Column-->
+          </div>
+        </div>
+      </section>
+      <!-- /Faq Section -->
+
+      
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Testimonios</h2>
+          <p>
+            Descubre cómo nuestras soluciones de automatización y marketing
+            digital han transformado los negocios de nuestros clientes.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 40
+                  },
+                  "1200": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 1
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    "Gracias a la automatización de nuestras campañas, hemos
+                    aumentado nuestras conversiones en un 30%. La integración de
+                    herramientas de IA ha optimizado nuestros procesos de
+                    marketing y nos ha permitido llegar a más clientes de manera
+                    más eficiente."
+                  </p>
+                  <div class="profile mt-auto">
+                    <img
+                      src="/static/img/testimonials/testimonials-1.jpg"
+                      class="testimonial-img"
+                      alt
+                    />
+                    <h3>Carlos Méndez</h3>
+                    <h4>CEO &amp; Fundador</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    "Implementamos un chatbot en WhatsApp y los resultados
+                    fueron impresionantes. La atención al cliente mejoró, y
+                    pudimos resolver un mayor volumen de consultas, lo que nos
+                    permitió ahorrar tiempo y recursos."
+                  </p>
+                  <div class="profile mt-auto">
+                    <img
+                      src="/static/img/testimonials/testimonials-2.jpg"
+                      class="testimonial-img"
+                      alt
+                    />
+                    <h3>Laura Gómez</h3>
+                    <h4>Directora de Marketing</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    "La automatización de procesos ha revolucionado la forma en
+                    que gestionamos nuestras campañas. Ahora podemos
+                    personalizar el contenido en función del comportamiento del
+                    usuario, lo que nos ha permitido aumentar nuestras tasas de
+                    retención."
+                  </p>
+                  <div class="profile mt-auto">
+                    <img
+                      src="/static/img/testimonials/testimonials-3.jpg"
+                      class="testimonial-img"
+                      alt
+                    />
+                    <h3>Fernanda Rodríguez</h3>
+                    <h4>Co-Fundador &amp; Gerente de Producto</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    "La integración con el CRM ha sido clave para mejorar
+                    nuestra comunicación con los clientes. Las automatizaciones
+                    nos han permitido ser más proactivos y responder rápidamente
+                    a las necesidades del cliente."
+                  </p>
+                  <div class="profile mt-auto">
+                    <img
+                      src="/static/img/testimonials/testimonials-4.jpg"
+                      class="testimonial-img"
+                      alt
+                    />
+                    <h3>Rodrigo Martínez</h3>
+                    <h4>Consultora en Marketing Digital</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    "Gracias a la optimización en tiempo real de nuestras
+                    campañas, hemos logrado resultados medibles y efectivos.
+                    Ahora, podemos hacer ajustes en el momento justo para
+                    maximizar los resultados de cada campaña."
+                  </p>
+                  <div class="profile mt-auto">
+                    <img
+                      src="/static/img/testimonials/testimonials-5.jpg"
+                      class="testimonial-img"
+                      alt
+                    />
+                    <h3>Javier Pérez</h3>
+                    <h4>Emprendedor &amp; Director de Marketing</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- /Testimonials Section -->
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+        <div class="container footer-top">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">AutoMarketing Solutions</span>
+              </a>
+              <div class="footer-contact pt-3">
+                <p>A108 Adam Street</p>
+                <p>New York, NY 535022</p>
+                <p class="mt-3">
+                  <strong>Teléfono:</strong> <span>+1 5589 55488 55</span>
+                </p>
+                <p><strong>Email:</strong> <span>contacto@automarketing.com</span></p>
+              </div>
+              <div class="social-links d-flex mt-4">
+                <a href><i class="bi bi-twitter-x"></i></a>
+                <a href><i class="bi bi-facebook"></i></a>
+                <a href><i class="bi bi-instagram"></i></a>
+                <a href><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+      
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Enlaces Útiles</h4>
+              <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Términos de Servicio</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Nuestros Servicios</h4>
+              <ul>
+                <li><a href="#">Automatización de Procesos</a></li>
+                <li><a href="#">Marketing Digital</a></li>
+                <li><a href="#">Gestión de Productos</a></li>
+                <li><a href="#">Publicidad en Redes Sociales</a></li>
+                <li><a href="#">Diseño Web</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-lg-4 col-md-12 footer-newsletter">
+              <h4>Suscríbete a Nuestro Boletín</h4>
+              <p>
+                ¡Suscríbete a nuestro boletín y recibe las últimas noticias sobre
+                nuestras soluciones de automatización y marketing digital!
+              </p>
+              <form
+                action="forms/newsletter.php"
+                method="post"
+                class="php-email-form"
+              >
+                <div class="newsletter-form">
+                  <input type="email" name="email" /><input
+                    type="submit"
+                    value="Suscribirse"
+                  />
+                </div>
+                <div class="loading">Cargando...</div>
+                <div class="error-message"></div>
+                <div class="sent-message">
+                  ¡Tu solicitud de suscripción ha sido enviada! Gracias.
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      
+        <div class="container copyright text-center mt-4">
+          <p>
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">AutoMarketing Solutions</strong>
+            <span>Todos los Derechos Reservados</span>
+          </p>
+          <div class="credits">
+            <!-- Todos los enlaces en el pie de página deben permanecer intactos. -->
+            <!-- Puedes eliminar los enlaces solo si has comprado la versión pro. -->
+            <!-- Información sobre la licencia: https://bootstrapmade.com/license/ -->
+            <!-- Compra la versión pro con el formulario de contacto PHP/AJAX funcional: [buy-url] -->
+            Diseñado por <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+      </footer>
+      
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/vendor/php-email-form/validate.js"></script>
+    <script src="/static/vendor/aos/aos.js"></script>
+    <script src="/static/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/static/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>

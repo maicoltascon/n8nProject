@@ -1,0 +1,146 @@
+/* Estilo principal para la sección de Email Marketing */
+#email-marketing {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+  
+  /* Estilo para el título de la sección */
+  #email-marketing .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para la descripción */
+  #email-marketing .section-description {
+    font-size: 1.25rem;
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilo para la lista de características */
+  #email-marketing .features-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  #email-marketing .features-list li {
+    font-size: 1.1rem;
+    color: #495057;
+    margin-bottom: 10px;
+  }
+  
+  #email-marketing .features-list i {
+    color: #28a745;
+    margin-right: 10px;
+  }
+  
+  /* Estilo para el texto de llamada a la acción */
+  #email-marketing .cta-text {
+    font-size: 1.15rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  /* Estilo para las imágenes */
+  #email-marketing .about-images img {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo de la columna de contenido */
+  #email-marketing .content {
+    padding-right: 30px;
+  }
+  
+  /* Espaciado entre las filas */
+  #email-marketing .row.gy-4 {
+    margin-bottom: 30px;
+  }
+
+
+  .scraper-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+  }
+
+  .scraper-card {
+    background: linear-gradient(135deg, #388da8, #57bddc);
+    color: white;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .scraper-card h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    font-weight: bold;
+  }
+
+  .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .btn-block {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+  .btn-success {
+    background-color: #28a745;
+    border: none;
+  }
+
+  .btn-success:hover {
+    background-color: #218838;
+  }
+
+  hr {
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    margin: 20px 0;
+  }
+  
+  /* Asegura que el texto se vea bien en dispositivos móviles */
+  @media (max-width: 768px) {
+    #email-marketing .content {
+      text-align: center;
+      padding-right: 0;
+    }
+  
+    #email-marketing .section-title {
+      font-size: 2rem;
+    }
+  
+    #email-marketing .section-description {
+      font-size: 1.1rem;
+    }
+  
+    #email-marketing .cta-text {
+      font-size: 1rem;
+    }
+  }
+  
