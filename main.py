@@ -44,9 +44,9 @@ def crear_item(
     precio: float = Form(...)
 ):
     data = {
-        "nombre": nombre,
-        "descripcion": descripcion,
-        "precio": precio
+        "name": nombre,
+        "description": descripcion,
+        "price": precio
     }
     
     response = requests.post(N8N_WEBHOOK_URL, json=data)
@@ -59,7 +59,7 @@ def crear_item(
 
 
 
-@app.post("/api/scrapear/")
+@app.post("/api/scraping/")
 def scrapear_pagina(request: URLRequest):
     # Usamos la función scrape_price del archivo scraper.py
     result = scrape_price(request.url)
