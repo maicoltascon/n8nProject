@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (response.ok) {
         const data = await response.json(); // Obtener la respuesta en JSON
         console.log("Respuesta del servidor:", data); // Mostrar la respuesta en consola
-        alert("Producto guardado correctamente");
+        alert("Producto enviado correctamente");
       } else {
         // Si hubo algún error en la respuesta
         const errorData = await response.json();

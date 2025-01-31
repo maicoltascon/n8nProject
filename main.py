@@ -38,24 +38,25 @@ def read_root():
 
 
 @app.post("/api/send-product/")
-def crear_item(
-    nombre: str = Form(...),
-    descripcion: str = Form(...),
-    precio: float = Form(...)
-):
-    data = {
-        "name": nombre,
-        "description": descripcion,
-        "price": precio
-    }
-    
-    response = requests.post(N8N_WEBHOOK_URL, json=data)
+async def crear_item(request: dict):
+    try:
+        data = {
+            "name": request.get("name"),
+            "description": request.get("description"),
+            "price": request.get("price"),
+        }
 
-    return {
-        "mensaje": "Datos enviados a n8n",
-        "datos_enviados": data,
-        "respuesta_n8n": response.json() if response.status_code == 200 else "Error en n8n"
-    }
+        response = requests.post(N8N_WEBHOOK_URL, json=data)
+        response_data = response.json() if response.status_code == 200 else "Error en n8n"
+
+        return {
+            "mensaje": "Datos enviados a n8n",
+            "datos_enviados": data,
+            "respuesta_n8n": response_data
+        }
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error al enviar datos: {str(e)}")
 
 
 
